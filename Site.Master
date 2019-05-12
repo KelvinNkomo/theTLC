@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Synergince.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="StudentPage.Master" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+</head>
+
+               
+                    
+                    
+                   
+                    
+
+<body bgcolor="#ffffff" background="Image/images.png" vlink="#ff0000">
+    <form runat="server">
+    <div class="page">
+        <div class="header" 
+            
+            
+            
+            style="background-color: #FFFFFF; background-image: none; top: -10px; left: 1px; height: 165px;">
+            <div class="title" style="background-color: #FFFF00; height: 121px;">
+                <h1 style="background-image: none; background-color: #FFFF00;">
+                    &nbsp;</h1>
+            </div>
+            <div class="loginDisplay" 
+                style="background-image: none; height: 100px; text-align: right;">
+                <asp:Image ID="Image1" runat="server" Height="94px" ImageAlign="Left" 
+                    ImageUrl="~/Image/images.png" style="text-align: center" />
+                <asp:Label ID="Label1" runat="server" BackColor="Yellow" ForeColor="Black" 
+                    Height="52px" Text=" " Width="89px"></asp:Label>
+            </div>
+            <div class="menu" 
+                
+                
+                
+                
+                
+                
+                style="visibility: visible; cursor: auto; overflow: auto; list-style-type: none; background-color: #FFFFFF; height: 35px; text-align: left;">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="False" IncludeStyleBlock="False" Orientation="Horizontal" 
+                    BackColor="#B5C7DE" DynamicHorizontalOffset="2" Font-Names="Verdana" 
+                    Font-Size="0.8em" ForeColor="#284E98" StaticSubMenuIndent="10px" 
+                    onmenuitemclick="NavigationMenu_MenuItemClick">
+                    <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#B5C7DE" />
+                    <DynamicSelectedStyle BackColor="#507CD1" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About TLC"/>
+                        <asp:MenuItem NavigateUrl="~/Account/Login.aspx" Text="Login" Value="Login">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Register" Value="Logout" 
+                            NavigateUrl="~/Account/Register.aspx"></asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#507CD1" />
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <p>
+                    &nbsp;</p>
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear" 
+            
+            style="background-color: #FFFFFF; height: 53px; margin-top: 41px; text-align: left;">
+                <asp:Label ID="Label2" runat="server" BackColor="Yellow" ForeColor="Black" 
+                    Height="52px" Text=" " Width="89px"></asp:Label>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

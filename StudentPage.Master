@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StudentPage.Master.cs" Inherits="Synergince.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Home Page |Administrator</title>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet" type="text/css" />
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+    </asp:ContentPlaceHolder>
+</head>
+
+<%--<body class = "header-collapse">
+    <form id="form1" runat="server">
+    
+	<body class="header-collapse">
+		
+		<div id="site-content">
+			<header class="site-header">
+				<div class="container">
+					<a href="index.html" id="branding">
+						<img src="dummy/logo.png" alt="Site Title">
+						<small class="site-description">Busi you bitch</small>
+					</a> <!-- #branding -->
+					
+					<nav class="main-navigation">
+						<button type="button" class="toggle-menu"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="Band Members.html">Band Members</a></li>
+							<li class="menu-item"><a href="gallery.html">Gallery</a></li>
+							<li class="menu-item"><a href="download.html">Our Music</a></li>
+							<li class="menu-item"><a href="blog.html">Calendar</a></li>
+							<li class="menu-item"><a href="contact.html">Contact</a></li>
+						</ul> <!-- .menu -->
+					</nav> <!-- .main-navigation -->
+					<div class="mobile-menu"></div>
+				</div>
+			</header> <!-- .site-header -->
+			
+			<div class="hero">
+				<div class="slider">
+					<ul class="slides">
+						<li class="lazy-bg" data-background="dummy/slide-1.jpg">
+							<div class="container">
+								<h2 class="slide-title">Welcome to our official website!</h2>
+								<h3 class="slide-subtitle">We are Johanity</h3>
+								<p class="slide-desc">-A Melbourne pop band consisting of 3 locals. <br>Watch this Melbourne!</p>
+
+								<a href="Band Members.html" class="button cut-corner">Read More</a>
+							</div>
+						</li>
+						<li class="lazy-bg" data-background="dummy/slide-2.jpg">
+							<div class="container">
+									<h2 class="slide-title">The upcoming soul of Melbourne</h2>
+									<h3 class="slide-subtitle">Our love for music...</h3>
+									<p class="slide-desc">The new generation's musical kryptonite <br>"I play my guitar not because I get paid to, but because I love it" - Jason</p>
+
+									<a href="Band Members.html" class="button cut-corner">Read More</a>
+							</div>
+						</li>
+						<li class="lazy-bg" data-background="dummy/slide-3.jpg">
+							<div class="container">
+									<h2 class="slide-title">Perfomances</h2>
+									<h3 class="slide-subtitle">Upcoming</h3>
+									<p class="slide-desc">We have upcoming tours<br>Be sure to follow our social media so you don't miss anything</p>
+
+									<a href="blog.html" class="button cut-corner">Read More</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+   <%-- <div>
+        
+        
+            <div style="height: 106px">
+                <asp:Label ID="Label1" runat="server" Height="100px" Text="Label" Width="50px"></asp:Label>
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Image/images.png" />
+            </div>
+            <div style="height: 163px">
+            <div id="menu">
+            <ul> 
+                    <li><a href = "#">Add details</a>
+                    <ul><li><a href = "#">Add Course
+                    </a>
+                    </li>
+                    <li><a href = "#">Add SI
+                    </a>
+                    </li>
+                    <li><a href = "#">Add LWAP
+                    </a>
+                    </li>
+                    </ul>
+                    </li>
+                    <li><a href = "#">Manage details</a>
+                    </li>
+                    <li><a href = "#">Reports</a>
+                     <ul><li><a href = "#">Student
+                    </a>
+                    </li>
+                    <li><a href = "#">Course
+                    </a>
+                    </li>
+                    <li><a href = "#">LWAP
+                    </a>
+                    </li>
+                    </ul>
+                    </li>
+            </ul>
+            </div>
+            </div>
+        
+        </asp:ContentPlaceHolder>
+    </div>--%>
+    </form>
+</body>--%>
+</html>

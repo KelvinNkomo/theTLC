@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Student.Master.cs" Inherits="Synergince.Students" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Student | Home</title>
+    <link href="StyleSheet2.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <div id="site-content">
+			<header class="site-header">
+				
+					<a href="StudentHome.aspx" id="branding">
+						<img src= "Image/images.png" alt="Site Title" />
+                       <%-- &nbsp;--%>
+					</a> <!-- #branding -->
+					
+					<nav class="main-navigation">
+						<button type="button" class="toggle-menu"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item"><a href="StudentHome.aspx">Home</a></li>
+							<li class="menu-item"><a href="StudentProfile.aspx">My Profile</a></li>
+							<li class="menu-item"><a href="StudentBookSI.aspx">Book SI</a></li>
+							<li class="menu-item"><a href="StudentBookLWAP.aspx">Book LWAP</a></li>
+							<li class="menu-item current-menu-item"><a href="StudentBookings.aspx">My Bookings</a></li>
+							<li class="menu-item"><a href="Account/Login.aspx">Logout</a></li>
+						</ul> <!-- .menu -->
+					</nav> <!-- .main-navigation -->
+					<div class="mobile-menu"></div>
+        </div>
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

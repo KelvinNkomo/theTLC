@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA3C3054-7857-4665-A913-5BF6A5D6B00D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Synergince</RootNamespace>
+    <AssemblyName>Synergince</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.Synchronization, Version=1.0.0.0" />
+    <Reference Include="Microsoft.Synchronization.Data, Version=2.0.0.0" />
+    <Reference Include="Microsoft.Synchronization.Data.Server, Version=2.0.0.0" />
+    <Reference Include="Microsoft.Synchronization.Data.SqlServerCe, Version=2.0.0.0" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Student.Master.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student.Master.designer.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StudentBookings.aspx.cs">
+      <DependentUpon>StudentBookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentBookings.aspx.designer.cs">
+      <DependentUpon>StudentBookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentBookLWAP.aspx.cs">
+      <DependentUpon>StudentBookLWAP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentBookLWAP.aspx.designer.cs">
+      <DependentUpon>StudentBookLWAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm4.aspx.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm4.aspx.designer.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm5.aspx.cs">
+      <DependentUpon>StudentProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm5.aspx.designer.cs">
+      <DependentUpon>StudentProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentBookSI.aspx.cs">
+      <DependentUpon>StudentBookSI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentBookSI.aspx.designer.cs">
+      <DependentUpon>StudentBookSI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm7.aspx.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm7.aspx.designer.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+    </Compile>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="AddSI.aspx" />
+    <Content Include="Admin\Course.aspx" />
+    <Content Include="Admin\EditInformation.aspx" />
+    <Content Include="Admin\LWAP.aspx" />
+    <Content Include="Admin\Reports\Course.aspx" />
+    <Content Include="Admin\Reports\LWAPPersonalDetails.aspx" />
+    <Content Include="Admin\Reports\StudentDetails.aspx" />
+    <Content Include="Admin\SI.aspx" />
+    <Content Include="Image\20171005_134848.jpg" />
+    <Content Include="Image\20171005_134900.jpg" />
+    <Content Include="VID-20171005-WA0001.mp4" />
+    <Content Include="App_Data\ASPNETDB.MDF" />
+    <Content Include="App_Data\ASPNETDB_log.ldf">
+      <DependentUpon>ASPNETDB.MDF</DependentUpon>
+    </Content>
+    <Content Include="App_Data\TLC.mdf" />
+    <Content Include="App_Data\TLC_log.ldf">
+      <DependentUpon>TLC.mdf</DependentUpon>
+    </Content>
+    <Content Include="Bookings\BookSI.aspx" />
+    <Content Include="Bookings\LWAPBooking.aspx" />
+    <Content Include="Bookings\SIBooking.aspx" />
+    <Content Include="EditInformation2.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Image\20170731_161232.jpg" />
+    <Content Include="Image\20170801_125834.jpg" />
+    <Content Include="Image\images-1.png" />
+    <Content Include="Image\images.jpg" />
+    <Content Include="Image\images.png" />
+    <Content Include="Image\IMG-20170731-WA0041.jpg" />
+    <Content Include="Image\IMG-20170731-WA0042.jpg" />
+    <Content Include="Image\IMG-20170731-WA0043.jpg" />
+    <Content Include="Image\IMG-20170731-WA0044.jpg" />
+    <Content Include="Image\IMG-20170731-WA0045.jpg" />
+    <Content Include="Image\IMG-20170731-WA0046.jpg" />
+    <Content Include="Image\IMG-20170731-WA0047.jpg" />
+    <Content Include="Image\IMG-20170731-WA0048.jpg" />
+    <Content Include="Image\IMG-20170731-WA0049.jpg" />
+    <Content Include="Image\IMG-20170731-WA0050.jpg" />
+    <Content Include="Image\IMG-20170731-WA0051.jpg" />
+    <Content Include="Image\IMG-20170731-WA0052.jpg" />
+    <Content Include="Image\IMG-20170731-WA0053.jpg" />
+    <Content Include="Image\IMG-20170731-WA0054.jpg" />
+    <Content Include="Image\IMG-20170731-WA0055.jpg" />
+    <Content Include="LWAP\MyLWAPBookings.aspx" />
+    <Content Include="LWAP\MyLWAPProfile.aspx" />
+    <Content Include="SI\MySIBookings.aspx" />
+    <Content Include="SI\MySIProfile.aspx" />
+    <Content Include="SQLScripts\TLCCache.dbo.Administrator.sql" />
+    <Content Include="SQLScripts\TLCCache.dbo.Bookings.sql" />
+    <Content Include="SQLScripts\TLCCache.dbo.Course.sql" />
+    <Content Include="SQLScripts\TLCCache.dbo.Login.sql" />
+    <Content Include="SQLScripts\TLCCache.dbo.LWAP.sql" />
+    <Content Include="SQLScripts\TLCCache.dbo.SI.sql" />
+    <Content Include="SQLScripts\TLCCache.dbo.Student.sql" />
+    <Content Include="SQLScripts\TLCCache.TLC.sql" />
+    <Content Include="SQLUndoScripts\TLCCache.dbo.Administrator.disable.sql" />
+    <Content Include="SQLUndoScripts\TLCCache.dbo.Bookings.disable.sql" />
+    <Content Include="SQLUndoScripts\TLCCache.dbo.Course.disable.sql" />
+    <Content Include="SQLUndoScripts\TLCCache.dbo.Login.disable.sql" />
+    <Content Include="SQLUndoScripts\TLCCache.dbo.LWAP.disable.sql" />
+    <Content Include="SQLUndoScripts\TLCCache.dbo.SI.disable.sql" />
+    <Content Include="SQLUndoScripts\TLCCache.dbo.Student.disable.sql" />
+    <Content Include="SQLUndoScripts\TLCCache.TLC.disable.sql" />
+    <Content Include="StudentBookings.aspx" />
+    <Content Include="StudentBookLWAP.aspx" />
+    <Content Include="Student\Bookings.aspx" />
+    <Content Include="Student\Profile.aspx" />
+    <Content Include="Student\WebForm1.aspx" />
+    <Content Include="StyleSheet2.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Compile Include="connection.cs" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="StudentHome.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Admin\Reports\SIReport.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
+    <Content Include="WebForm4.aspx" />
+    <Content Include="StudentProfile.aspx" />
+    <Content Include="StudentBookSI.aspx" />
+    <Content Include="WebForm7.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\LogAccounts.cs" />
+    <Compile Include="Account\LogAccounts_2.cs" />
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\SqlAdapter.cs" />
+    <Compile Include="AddSI.aspx.cs">
+      <DependentUpon>AddSI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddSI.aspx.designer.cs">
+      <DependentUpon>AddSI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Course.aspx.cs">
+      <DependentUpon>Course.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Course.aspx.designer.cs">
+      <DependentUpon>Course.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditInformation.aspx.cs">
+      <DependentUpon>EditInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditInformation.aspx.designer.cs">
+      <DependentUpon>EditInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LWAP.aspx.cs">
+      <DependentUpon>LWAP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LWAP.aspx.designer.cs">
+      <DependentUpon>LWAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reports\Course.aspx.cs">
+      <DependentUpon>Course.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reports\Course.aspx.designer.cs">
+      <DependentUpon>Course.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reports\LWAPPersonalDetails.aspx.cs">
+      <DependentUpon>LWAPPersonalDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reports\LWAPPersonalDetails.aspx.designer.cs">
+      <DependentUpon>LWAPPersonalDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reports\StudentDetails.aspx.cs">
+      <DependentUpon>StudentDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reports\StudentDetails.aspx.designer.cs">
+      <DependentUpon>StudentDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SI.aspx.cs">
+      <DependentUpon>SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SI.aspx.designer.cs">
+      <DependentUpon>SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bookings\BookSI.aspx.cs">
+      <DependentUpon>BookSI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bookings\BookSI.aspx.designer.cs">
+      <DependentUpon>BookSI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bookings\LWAPBooking.aspx.cs">
+      <DependentUpon>LWAPBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bookings\LWAPBooking.aspx.designer.cs">
+      <DependentUpon>LWAPBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bookings\SIBooking.aspx.cs">
+      <DependentUpon>SIBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bookings\SIBooking.aspx.designer.cs">
+      <DependentUpon>SIBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CourseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetLWAP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetLWAP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetStudent.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetStudent.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditInformation2.aspx.cs">
+      <DependentUpon>EditInformation2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditInformation2.aspx.designer.cs">
+      <DependentUpon>EditInformation2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LWAP\MyLWAPBookings.aspx.cs">
+      <DependentUpon>MyLWAPBookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LWAP\MyLWAPBookings.aspx.designer.cs">
+      <DependentUpon>MyLWAPBookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LWAP\MyLWAPProfile.aspx.cs">
+      <DependentUpon>MyLWAPProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LWAP\MyLWAPProfile.aspx.designer.cs">
+      <DependentUpon>MyLWAPProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPage.Master.cs">
+      <DependentUpon>StudentPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentPage.Master.designer.cs">
+      <DependentUpon>StudentPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SI\MySIBookings.aspx.cs">
+      <DependentUpon>MySIBookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SI\MySIBookings.aspx.designer.cs">
+      <DependentUpon>MySIBookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SI\MySIProfile.aspx.cs">
+      <DependentUpon>MySIProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SI\MySIProfile.aspx.designer.cs">
+      <DependentUpon>MySIProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Bookings.aspx.cs">
+      <DependentUpon>Bookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Bookings.aspx.designer.cs">
+      <DependentUpon>Bookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reports\SIReport.aspx.cs">
+      <DependentUpon>SIReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reports\SIReport.aspx.designer.cs">
+      <DependentUpon>SIReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentHome.aspx.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentHome.aspx.designer.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CourseDataSet.xsc">
+      <DependentUpon>CourseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CourseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CourseDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CourseDataSet.xss">
+      <DependentUpon>CourseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetLWAP.xsc">
+      <DependentUpon>DataSetLWAP.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetLWAP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetLWAP.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetLWAP.xss">
+      <DependentUpon>DataSetLWAP.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetStudent.xsc">
+      <DependentUpon>DataSetStudent.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetStudent.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetStudent.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetStudent.xss">
+      <DependentUpon>DataSetStudent.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="StudentPage.Master" />
+    <Content Include="Web.sitemap" />
+    <Content Include="Student\web.config" />
+    <Content Include="Student.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Animation\" />
+    <Folder Include="Student 1.2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LWAPReport.rdlc" />
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="SIReport.rdlc" />
+    <EmbeddedResource Include="StudentReport.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>48887</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Synergince</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
