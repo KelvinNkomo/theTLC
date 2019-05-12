@@ -1,2 +1,2 @@
 # theTLC
-This a web based consultation booking system for students to book tutors for private sessions. 
+This a web based consultation booking system for students to book tutors for private sessions. This allows for students to book sessions with tutors at the comfort of their home without the need for going to campus to book sessions at the Teaching and Learning Center. The system also allows for reporting for the TLC department. To see how many students are booking tutors. So they can analyse the data and make better decison making.
